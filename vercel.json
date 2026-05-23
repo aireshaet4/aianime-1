@@ -1,0 +1,16 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/sync?mode=auto&enable=1&pages=3&limit=25&order=popularity",
+      "schedule": "0 */6 * * *"
+    },
+    {
+      "path": "/api/cron/sync-kodik?mode=auto&enable=1&limit=30",
+      "schedule": "30 */8 * * *"
+    },
+    {
+      "path": "/api/cron/players?enable=1&limit=30",
+      "schedule": "45 */8 * * *"
+    }
+  ]
+}
